@@ -170,7 +170,7 @@ img {
 .main-sec {
   position: relative;
   padding-bottom: 70px;
-  background-image: url("../images/bg-foot.jpeg");
+  background-image: url("./images/bg-foot.jpeg");
   background-position: center top;
   background-repeat: repeat;
   background-size: 100%;
@@ -183,7 +183,7 @@ img {
   display: block;
   width: 100%;
   height: 16.3vw;
-  background-image: url("../images/bg-head.png");
+  background-image: url("./images/bg-head.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100%;
@@ -305,7 +305,7 @@ footer p {
   display: block;
   width: 100%;
   height: 61px;
-  background-image: url("../images/heading-top.png");
+  background-image: url("./images/heading-top.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -353,14 +353,14 @@ footer p {
 }
 .bubble--left::after {
   left: 25px;
-  background-image: url("../images/bubble-tail-left.png");
+  background-image: url("./images/bubble-tail-left.png");
 }
 .bubble--right {
   background-color: #EFE6DE;
 }
 .bubble--right::after {
   right: 25px;
-  background-image: url("../images/bubble-tail-right.png");
+  background-image: url("./images/bubble-tail-right.png");
 }
 
 /* sp */
