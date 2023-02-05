@@ -22,13 +22,6 @@ a {
   text-decoration: none;
   color: inherit;
 }
-img {
-  display: block;
-  object-fit: cover;
-  -o-object-fit: cover;
-  object-position: center;
-  -o-object-position: center;
-}
 
 .hero-sec {
   position: relative;
@@ -37,7 +30,7 @@ img {
     position: absolute;
     top: 11%;
     left: 7.9%;
-    h1 img {width: 31.5vw;}
+    h1 img {width: 454px;}
     p {
       margin-top: 4.3%;
       font-size: 21px;
@@ -52,8 +45,6 @@ img {
   position: relative;
   padding-bottom: 70px;
   background-image: url('../images/bg-foot.jpeg');
-  background-position: center top;
-  background-repeat: repeat;
   background-size: 100%;
   z-index: 10;
   &::before {
@@ -62,7 +53,7 @@ img {
     top: -16vw;
     display: block;
     width: 100%;
-    height: 16.3vw;
+    height: 235px;
     background-image: url('../images/bg-head.png');
     background-repeat: no-repeat;
     background-position: center;
@@ -94,6 +85,8 @@ img {
       width: calc(50% - 12px);
       height: 272px;
       border-radius: 19px;
+      width: 50%;
+      border-radius: 22px;
     }
     p {
       letter-spacing: 3px;
@@ -114,11 +107,14 @@ img {
         margin: 0 auto;
       }
     }
-    > img {width: 100%;}
   }
   &__voice {
     padding: 32px 75px 60px;
     margin-top: 80px;
+    > img {
+      width: 100%;
+      border-radius: 22px;
+    }
   }
   &__link {
     margin-top: 60px;
