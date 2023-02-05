@@ -319,7 +319,6 @@ footer {
     &--right {&::after {right: 15px;}}
   }
 }
-@import './js-scroll';
 
 #back_to_top {
   margin: 0 auto;
@@ -328,7 +327,6 @@ footer {
   bottom: 20px;
   z-index: 999;
   transition: 0.3s ease;
-  opacity: 0;
   img {
     width: 34px;
     height: 165px;
