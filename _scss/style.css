@@ -1,0 +1,554 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+@font-face {
+  font-family: "Hiragino Kaku Gothic ProN";
+  src: url("../fonts/hiragino-kaku-gothic-pron-w3.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Hiragino Kaku Gothic ProN";
+  src: url("../fonts/hiragino-kaku-gothic-pron-w6.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 700;
+  color: #8E6F6F;
+  background-color: #F8F0E4;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  display: block;
+  object-fit: cover;
+  -o-object-fit: cover;
+  object-position: center;
+  -o-object-position: center;
+}
+
+.hero-sec {
+  position: relative;
+}
+.hero-sec > img {
+  width: 100%;
+}
+.hero-sec__desc {
+  position: absolute;
+  top: 11%;
+  left: 7.9%;
+}
+.hero-sec__desc h1 img {
+  width: 31.5vw;
+}
+.hero-sec__desc p {
+  margin-top: 4.3%;
+  font-size: 1.5vw;
+  line-height: 1.45;
+  text-align: center;
+  color: #fff;
+}
+
+.main-sec {
+  position: relative;
+  padding-bottom: 70px;
+  background-image: url("../images/bg-foot.jpeg");
+  background-position: center top;
+  background-repeat: repeat;
+  background-size: 100%;
+  z-index: 10;
+}
+.main-sec::before {
+  content: "";
+  position: absolute;
+  top: -16vw;
+  display: block;
+  width: 100%;
+  height: 16.3vw;
+  background-image: url("../images/bg-head.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.main-sec__container {
+  max-width: 930px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+.main-sec__desc h2 {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+}
+.main-sec__desc p {
+  width: 480px;
+  margin: 42px auto 0;
+  font-size: 20px;
+  line-height: 2.1;
+  letter-spacing: 3.7px;
+}
+.main-sec__example {
+  padding: 32px 55px 41px;
+}
+.main-sec__example:nth-child(2) {
+  margin-top: 82px;
+}
+.main-sec__example + .main-sec__example {
+  margin-top: 57px;
+}
+.main-sec__example img {
+  width: calc(50% - 12px);
+  height: 272px;
+  border-radius: 19px;
+}
+.main-sec__example p {
+  font-size: 21px;
+  letter-spacing: 2.7px;
+  line-height: 1.75;
+}
+.main-sec__usage {
+  position: relative;
+  margin-top: 122px;
+  padding: 88px 55px 61px;
+}
+.main-sec__usage h2 {
+  position: absolute;
+  top: -73px;
+  left: 0;
+  right: 0;
+}
+.main-sec__usage h2 img {
+  width: 370px;
+  margin: 0 auto;
+}
+.main-sec__usage > img {
+  width: 100%;
+}
+.main-sec__voice {
+  padding: 32px 75px 60px;
+  margin-top: 80px;
+}
+.main-sec__link {
+  margin-top: 60px;
+}
+.main-sec__link a {
+  display: block;
+  width: fit-content;
+  width: -moz-fit-content;
+  padding: 29px 34px;
+  border-radius: 36px;
+  margin: 0 auto;
+  font-family: "Hiragino Kaku Gothic ProN", serif;
+  font-size: 36px;
+  font-weight: bold;
+  letter-spacing: 10.6px;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+  background-color: #B08433;
+}
+
+footer {
+  margin-top: 30px;
+}
+footer p {
+  font-family: "Hiragino Kaku Gothic ProN", serif;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+}
+
+.word-keep {
+  white-space: pre;
+  word-break: keep-all;
+}
+
+.white-content {
+  width: 100%;
+  border-radius: 22px;
+  background-color: #fff;
+}
+
+.heading--underline {
+  position: relative;
+  width: 281.5px;
+  padding-bottom: 2px;
+  border-bottom: 2px solid #B08433;
+  margin: 0 auto;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+}
+.heading--underline::before {
+  content: "";
+  position: absolute;
+  bottom: 53px;
+  display: block;
+  width: 100%;
+  height: 61px;
+  background-image: url("../images/heading-top.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.heading--underline::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin-top: 7px;
+  background-color: #B08433;
+}
+
+.flex-content {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 39px;
+}
+
+.bubble {
+  position: relative;
+  width: 100%;
+  padding: 18px 0;
+  border-radius: 22px;
+  margin-top: 36px;
+  font-size: 21px;
+  letter-spacing: 2px;
+  line-height: 1.7;
+  text-align: center;
+}
+.bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  display: block;
+  width: 45px;
+  height: 26px;
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: contain;
+}
+.bubble--left {
+  background-color: #F8F0E4;
+}
+.bubble--left::after {
+  left: 25px;
+  background-image: url("../images/bubble-tail-left.png");
+}
+.bubble--right {
+  background-color: #EFE6DE;
+}
+.bubble--right::after {
+  right: 25px;
+  background-image: url("../images/bubble-tail-right.png");
+}
+
+/* sp */
+@media screen and (max-width: 767px) {
+  .hero-sec__desc {
+    left: 4.5%;
+  }
+  .hero-sec__desc h1 img {
+    margin: auto;
+  }
+  .main-sec {
+    padding-bottom: 50px;
+  }
+  .main-sec__container {
+    max-width: 500px;
+    padding: 10px 20px;
+  }
+  .main-sec__desc h2 {
+    font-size: 18px;
+  }
+  .main-sec__desc p {
+    width: 75%;
+    margin: 20px auto 0;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 2.4px;
+  }
+  .main-sec__example {
+    padding: 20px 25px;
+  }
+  .main-sec__example:nth-child(2) {
+    margin-top: 50px;
+  }
+  .main-sec__example + .main-sec__example {
+    margin-top: 40px;
+  }
+  .main-sec__example img {
+    width: 100%;
+    height: 55vw;
+    min-height: 215px;
+    max-height: 40vw;
+    border-radius: 20px;
+  }
+  .main-sec__example p {
+    padding: 0 1px;
+    font-size: 12px;
+    letter-spacing: 2.4px;
+  }
+  .main-sec__usage {
+    margin-top: 65px;
+    padding: 50px 20px 20px;
+  }
+  .main-sec__usage h2 {
+    top: -40px;
+  }
+  .main-sec__usage h2 img {
+    width: 60%;
+  }
+  .main-sec__voice {
+    padding: 20px 25px 30px;
+    margin-top: 35px;
+  }
+  .main-sec__link {
+    margin-top: 30px;
+  }
+  .main-sec__link a {
+    width: 100%;
+    padding: 20px;
+    border-radius: 20px;
+    font-size: 24px;
+    letter-spacing: 4px;
+  }
+  footer {
+    margin-top: 10px;
+  }
+  footer p {
+    font-size: 10px;
+  }
+  .heading--underline {
+    width: 185px;
+    padding-bottom: 1px;
+    font-size: 24px;
+  }
+  .heading--underline::before {
+    bottom: 33px;
+    height: 40px;
+  }
+  .heading--underline::after {
+    margin-top: 4px;
+  }
+  .flex-content {
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  .bubble {
+    padding: 12px;
+    border-radius: 14px;
+    margin-top: 20px;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  .bubble::after {
+    bottom: -14px;
+    width: 25px;
+    height: 15px;
+  }
+  .bubble--left::after {
+    left: 15px;
+  }
+  .bubble--right::after {
+    right: 15px;
+  }
+}
+.fade {
+  opacity: 0;
+  transition: all 0.5s;
+}
+.fade.show {
+  opacity: 1;
+}
+.fade--up {
+  opacity: 0;
+  transition: all 0.5s;
+  transform: translate(0, 50px);
+}
+.fade--up.show {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.fade--down {
+  opacity: 0;
+  transition: all 0.5s;
+  transform: translate(0, -50px);
+}
+.fade--down.show {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.fade--right {
+  opacity: 0;
+  transition: all 0.5s;
+  transform: translate(50px, 0);
+}
+.fade--right.show {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.fade--left {
+  opacity: 0;
+  transition: all 0.5s;
+  transform: translate(-50px, 0);
+}
+.fade--left.show {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.fade__wrap {
+  height: auto;
+  overflow: hidden;
+}
+
+#back_to_top {
+  margin: 0 auto;
+  position: fixed;
+  right: 2%;
+  bottom: 20px;
+  z-index: 999;
+  transition: 0.3s ease;
+  opacity: 0;
+}
+#back_to_top img {
+  width: 34px;
+  height: 165px;
+}
+#back_to_top.sc {
+  opacity: 1;
+}
+#back_to_top button {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border: none;
+  background: none;
+  outline: 0;
+  display: block;
+}
+#back_to_top button:hover {
+  opacity: 0.5;
+}/*# sourceMappingURL=style.css.map */
