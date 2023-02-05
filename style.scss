@@ -218,6 +218,9 @@ footer {
 
   .main-sec {
     padding-bottom: 50px;
+    &::before {
+      top: -170px;
+    }
     &__container {
       max-width: 500px;
       padding: 10px 20px;
@@ -254,22 +257,19 @@ footer {
       padding:50px 20px 20px;
       h2 {
         top: -40px;
-        img {width: 60%;}
+        img {
+          width: 60%;
+          left: 0;
+          right: 0;
+          margin: auto;
+        }
       }
     }
     &__voice {
       padding: 20px 25px 30px;
-      margin-top: 35px;
     }
     &__link {
       margin-top: 30px;
-      a {
-        width: 100%;
-        padding: 20px;
-        border-radius: 20px;
-        font-size: 24px;
-        letter-spacing: 4px;
-      }
     }
   }
   footer {
@@ -278,18 +278,13 @@ footer {
   }
 
   .heading--underline {
-    width: 185px;
     padding-bottom: 1px;
     font-size: 24px;
-    &::before {
-      bottom: 33px;
-      height: 40px;
-    }
     &::after {margin-top: 4px;}
   }
   .flex-content {
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 0;
     margin-top: 20px;
   }
   .bubble {
@@ -303,8 +298,6 @@ footer {
       width: 25px;
       height: 15px;
     }
-    &--left {&::after {left: 15px;}}
-    &--right {&::after {right: 15px;}}
   }
 }
 
