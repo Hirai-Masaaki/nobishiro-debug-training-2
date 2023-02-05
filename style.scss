@@ -15,7 +15,6 @@ html {
   text-rendering: optimizeLegibility;
 }
 body {
-  font-weight: 700;
   color: $brown;
   background-color: $skin--light;
 }
@@ -41,7 +40,7 @@ img {
     h1 img {width: 31.5vw;}
     p {
       margin-top: 4.3%;
-      font-size: 1.5vw;
+      font-size: 21px;
       line-height: 1.45;
       text-align: center;
       color: $white;
@@ -76,17 +75,15 @@ img {
   }
   &__desc {
     h2 {
-      font-size: 30px;
-      font-weight: bold;
+      font-size: 28px;
       line-height: 1.5;
       text-align: center;
     }
     p {
       width: 480px;
       margin: 42px auto 0;
-      font-size: 20px;
-      line-height: 2.1;
-      letter-spacing: 3.7px;
+      line-height: 1.6;
+      letter-spacing: 2px;
     }
   }
   &__example {
@@ -99,9 +96,8 @@ img {
       border-radius: 19px;
     }
     p {
-      font-size: 21px;
-      letter-spacing: 2.7px;
-      line-height: 1.75;
+      letter-spacing: 3px;
+      line-height: 2;
     }
   }
   &__usage {
@@ -135,9 +131,6 @@ img {
       margin: 0 auto;
       font-size: 36px;
       font-weight: bold;
-      letter-spacing: 10.6px;
-      line-height: 1;
-      text-align: center;
       color: $white;
       background-color: $yellow;
     }
@@ -146,16 +139,12 @@ img {
 footer {
   margin-top: 30px;
   p {
-    font-size: 18px;
+    font-size: 12px;
     font-weight: normal;
     text-align: center;
   }
 }
 
-.word-keep {
-  white-space: pre;
-  word-break: keep-all;
-}
 .white-content {
   width: 100%;
   border-radius: 22px;
@@ -168,8 +157,6 @@ footer {
   border-bottom: 2px solid $yellow;
   margin: 0 auto;
   font-size: 36px;
-  font-weight: bold;
-  text-align: center;
   &::before {
     content: "";
     position: absolute;
@@ -204,8 +191,6 @@ footer {
   border-radius: 22px;
   margin-top: 36px;
   font-size: 21px;
-  letter-spacing: 2px;
-  line-height: 1.7;
   text-align: center;
   &::after {
     content: "";
