@@ -1,18 +1,4 @@
 @import "reset";
-@font-face {
-  font-family: 'Hiragino Kaku Gothic ProN';
-  src: url('../fonts/hiragino-kaku-gothic-pron-w3.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Hiragino Kaku Gothic ProN';
-  src: url('../fonts/hiragino-kaku-gothic-pron-w6.otf') format('opentype');
-  font-weight: bold;
-  font-style: normal;
-}
-$zenKaku: 'Zen Kaku Gothic New', sans-serif;
-$kakuGo: 'Hiragino Kaku Gothic ProN', serif;
 $white: #fff;
 $brown: #8E6F6F;
 $yellow: #B08433;
@@ -29,7 +15,6 @@ html {
   text-rendering: optimizeLegibility;
 }
 body {
-  font-family: $zenKaku;
   font-weight: 700;
   color: $brown;
   background-color: $skin--light;
@@ -148,7 +133,6 @@ img {
       padding: 29px 34px;
       border-radius: 36px;
       margin: 0 auto;
-      font-family: $kakuGo;
       font-size: 36px;
       font-weight: bold;
       letter-spacing: 10.6px;
@@ -162,7 +146,6 @@ img {
 footer {
   margin-top: 30px;
   p {
-    font-family: $kakuGo;
     font-size: 18px;
     font-weight: normal;
     text-align: center;
